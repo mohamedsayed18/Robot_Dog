@@ -1,0 +1,2 @@
+spot
+-DCATKIN_DEVEL_PREFIX=/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/devel -DCMAKE_INSTALL_PREFIX=/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/install -G Unix Makefiles

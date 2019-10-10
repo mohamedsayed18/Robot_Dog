@@ -1,0 +1,104 @@
+<?xml version='1.0'?>
+<robot name="dd_robot">
+
+  <!-- Base Link -->
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <box size="1.2 0.5 0.25"/>
+      </geometry>
+    </visual>
+  </link>
+<!--
+  <link name="right_j1">
+    <visual>
+      <origin xyz="0 0 0" rpy="1.570795 0 0" />
+      <geometry>
+          <sphere radius="0.05" />
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_right_j1" type="continuous">
+    <parent link="base_link"/>
+    <child link="right_j1"/>
+    <origin xyz="0.5 -0.30 0" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="right_j2">
+    <visual>
+      <origin xyz="0 0 0" rpy="1.570795 0 0" />
+      <geometry>
+          <sphere radius="0.05" />
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_right_j2" type="continuous">
+    <parent link="base_link"/>
+    <child link="right_j2"/>
+    <origin xyz="-0.5 -0.30 0" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="right_h1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <cylinder length="0.3" radius="0.02" />
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_right_h1" type="fixed">
+    <parent link="right_j1"/>
+    <child link="right_h1"/>
+    <origin xyz="0 0 -0.2" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="right_h2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <cylinder length="0.3" radius="0.02" />
+      </geometry>
+    </visual>
+  </link>
+  <joint name="joint_right_h2" type="fixed">
+    <parent link="right_j2"/>
+    <child link="right_h2"/>
+    <origin xyz="0 0 -0.2" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="right_knee1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <sphere radius="0.05" />
+      </geometry>
+    </visual>
+  </link>
+  <joint name="j_right_knee1" type="continuous">
+    <parent link="right_h1"/>
+    <child link="right_knee1"/>
+    <origin xyz="0 0 -0.2" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="right_leg1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <cylinder length="0.3" radius="0.02" />
+      </geometry>
+    </visual>
+  </link>
+  <joint name="j_right_leg1" type="fixed">
+    <parent link="right_knee1"/>
+    <child link="right_leg1"/>
+    <origin xyz="0 0 -0.2" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+-->
+</robot>
