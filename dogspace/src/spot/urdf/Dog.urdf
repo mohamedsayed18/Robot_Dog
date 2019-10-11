@@ -10,7 +10,7 @@
       </geometry>
     </visual>
   </link>
-<!--
+
   <link name="right_j1">
     <visual>
       <origin xyz="0 0 0" rpy="1.570795 0 0" />
@@ -100,5 +100,5 @@
     <origin xyz="0 0 -0.2" rpy="0 0 0" />
     <axis xyz="0 1 0" />
   </joint>
--->
+
 </robot>
