@@ -1,5 +1,5 @@
 <?xml version='1.0'?>
-<robot name="dog_robot">
+<robot name="dd_robot">
 
   <!-- Base Link -->
   <link name="base_link">
@@ -9,38 +9,92 @@
           <box size="1.2 0.5 0.25"/>
       </geometry>
     </visual>
-  </link>
-
-  <link name="right_j1">
+    <inertial>
+      <mass value="5"/>
+      <inertia ixx="0.13" ixy="0.0" ixz="0.0" iyy="0.21" iyz="0.0" izz="0.13"/>
+    </inertial>
     <visual>
-      <origin xyz="0 0 0" rpy="1.570795 0 0" />
+      <origin xyz="-0.5 -0.3 0" rpy="0 0 0" />
       <geometry>
           <sphere radius="0.05" />
       </geometry>
     </visual>
-  </link>
-  <joint name="joint_right_j1" type="continuous">
-    <parent link="base_link"/>
-    <child link="right_j1"/>
-    <origin xyz="0.5 -0.30 0" rpy="0 0 0" />
-    <axis xyz="0 1 0" />
-  </joint>
 
-  <link name="right_j2">
     <visual>
-      <origin xyz="0 0 0" rpy="1.570795 0 0" />
+      <origin xyz="0.5 -0.3 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.05" />
+      </geometry>
+    </visual>
+
+    <visual>
+      <origin xyz="-0.5 0.3 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.05" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.5 0.3 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.05" />
+      </geometry>
+    </visual>
+
+    <gazebo reference="base_link">
+      <material>Gazebo/Blue</material>
+      <pose>0 0 3 0 0 0</pose>
+    </gazebo>
+
+  </link>
+
+  <link name="left_h1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <cylinder length="0.3" radius="0.02" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.2" rpy="0 0 0" />
       <geometry>
           <sphere radius="0.05" />
       </geometry>
     </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+    </inertial>
   </link>
-  <joint name="joint_right_j2" type="continuous">
+  <joint name="joint_left_h1" type="continuous">
     <parent link="base_link"/>
-    <child link="right_j2"/>
-    <origin xyz="-0.5 -0.30 0" rpy="0 0 0" />
+    <child link="left_h1"/>
+    <origin xyz="0.5 0.3 -0.2" rpy="0 0 0" />
     <axis xyz="0 1 0" />
   </joint>
-
+  <link name="left_h2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <cylinder length="0.3" radius="0.02" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.2" rpy="0 0 0" />
+      <geometry>
+          <sphere radius="0.05" />
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+    </inertial>
+  </link>
+  <joint name="joint_left_h2" type="continuous">
+    <parent link="base_link"/>
+    <child link="left_h2"/>
+    <origin xyz="-0.5 0.3 -0.2" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
   <link name="right_h1">
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -48,14 +102,23 @@
           <cylinder length="0.3" radius="0.02" />
       </geometry>
     </visual>
+    <visual>
+      <origin xyz="0 0 -0.2" rpy="0 0 0" />
+      <geometry>
+          <sphere radius="0.05" />
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+    </inertial>
   </link>
-  <joint name="joint_right_h1" type="fixed">
-    <parent link="right_j1"/>
+  <joint name="joint_right_h1" type="continuous">
+    <parent link="base_link"/>
     <child link="right_h1"/>
-    <origin xyz="0 0 -0.2" rpy="0 0 0" />
+    <origin xyz="0.5 -0.3 -0.2" rpy="0 0 0" />
     <axis xyz="0 1 0" />
   </joint>
-
   <link name="right_h2">
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -63,40 +126,120 @@
           <cylinder length="0.3" radius="0.02" />
       </geometry>
     </visual>
-  </link>
-  <joint name="joint_right_h2" type="fixed">
-    <parent link="right_j2"/>
-    <child link="right_h2"/>
-    <origin xyz="0 0 -0.2" rpy="0 0 0" />
-    <axis xyz="0 1 0" />
-  </joint>
-
-  <link name="right_knee1">
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
+      <origin xyz="0 0 -0.2" rpy="0 0 0" />
       <geometry>
           <sphere radius="0.05" />
       </geometry>
     </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+    </inertial>
   </link>
-  <joint name="j_right_knee1" type="continuous">
-    <parent link="right_h1"/>
-    <child link="right_knee1"/>
-    <origin xyz="0 0 -0.2" rpy="0 0 0" />
+  <joint name="joint_right_h2" type="continuous">
+    <parent link="base_link"/>
+    <child link="right_h2"/>
+    <origin xyz="-0.5 -0.3 -0.2" rpy="0 0 0" />
     <axis xyz="0 1 0" />
   </joint>
 
-  <link name="right_leg1">
+  <link name="left_k1">
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
           <cylinder length="0.3" radius="0.02" />
       </geometry>
     </visual>
+    <visual>
+      <origin xyz="0 0 -0.2" rpy="0 0 0" />
+      <geometry>
+          <sphere radius="0.05" />
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+    </inertial>
   </link>
-  <joint name="j_right_leg1" type="fixed">
-    <parent link="right_knee1"/>
-    <child link="right_leg1"/>
+  <joint name="joint_left_k1" type="continuous">
+    <parent link="left_h1"/>
+    <child link="left_k1"/>
+    <origin xyz="0 0 -0.2" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="left_k2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <cylinder length="0.3" radius="0.02" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.2" rpy="0 0 0" />
+      <geometry>
+          <sphere radius="0.05" />
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+    </inertial>
+  </link>
+  <joint name="joint_left_k2" type="continuous">
+    <parent link="left_h2"/>
+    <child link="left_k2"/>
+    <origin xyz="0 0 -0.2" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="right_k1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <cylinder length="0.3" radius="0.02" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.2" rpy="0 0 0" />
+      <geometry>
+          <sphere radius="0.05" />
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+    </inertial>
+  </link>
+  <joint name="joint_right_k1" type="continuous">
+    <parent link="right_h1"/>
+    <child link="right_k1"/>
+    <origin xyz="0 0 -0.2" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="right_k2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <cylinder length="0.3" radius="0.02" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.2" rpy="0 0 0" />
+      <geometry>
+          <sphere radius="0.05" />
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+    </inertial>
+  </link>
+  <joint name="joint_right_k2" type="continuous">
+    <parent link="right_h2"/>
+    <child link="right_k2"/>
     <origin xyz="0 0 -0.2" rpy="0 0 0" />
     <axis xyz="0 1 0" />
   </joint>

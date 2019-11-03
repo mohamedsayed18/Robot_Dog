@@ -13,5 +13,11 @@ first i choose the Robot_Dog
 3- build the urdf file (almost done)
 4- improve my urdf with xacro
 5- launch on gazebo
+    to launch robot on gazebo we need to add some physical properties like inertia and mass
+
 6- make a launch file (done with rviz)
 7- writing a good readme
+### jokes
+funny_bug
+### References
+book: ros robotics by examples <br/>
