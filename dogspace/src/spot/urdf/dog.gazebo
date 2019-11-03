@@ -1,5 +1,5 @@
 <?xml version='1.0'?>
-<robot name="dd_robot">
+<robot name="dog_robot">
 
   <!-- Base Link -->
   <link name="base_link">
@@ -9,34 +9,6 @@
           <box size="1.2 0.5 0.25"/>
       </geometry>
     </visual>
-    <visual>
-      <origin xyz="-0.5 -0.3 0" rpy="0 0 0" />
-      <geometry>
-          <sphere radius="0.05" />
-      </geometry>
-    </visual>
-
-    <visual>
-      <origin xyz="0.5 -0.3 0" rpy="0 0 0" />
-      <geometry>
-        <sphere radius="0.05" />
-      </geometry>
-    </visual>
-
-    <visual>
-      <origin xyz="-0.5 0.3 0" rpy="0 0 0" />
-      <geometry>
-        <sphere radius="0.05" />
-      </geometry>
-    </visual>
-    <visual>
-      <origin xyz="0.5 0.3 0" rpy="0 0 0" />
-      <geometry>
-        <sphere radius="0.05" />
-      </geometry>
-    </visual>
-
-
   </link>
 
   <link name="right_j1">
