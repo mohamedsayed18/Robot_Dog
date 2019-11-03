@@ -124,5 +124,92 @@
     <axis xyz="0 1 0" />
   </joint>
 
+  <link name="left_k1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <cylinder length="0.3" radius="0.02" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.2" rpy="0 0 0" />
+      <geometry>
+          <sphere radius="0.05" />
+      </geometry>
+    </visual>
+
+  </link>
+  <joint name="joint_left_k1" type="continuous">
+    <parent link="left_h1"/>
+    <child link="left_k1"/>
+    <origin xyz="0 0 -0.2" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="left_k2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <cylinder length="0.3" radius="0.02" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.2" rpy="0 0 0" />
+      <geometry>
+          <sphere radius="0.05" />
+      </geometry>
+    </visual>
+
+  </link>
+  <joint name="joint_left_k2" type="continuous">
+    <parent link="left_h2"/>
+    <child link="left_k2"/>
+    <origin xyz="0 0 -0.2" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="right_k1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <cylinder length="0.3" radius="0.02" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.2" rpy="0 0 0" />
+      <geometry>
+          <sphere radius="0.05" />
+      </geometry>
+    </visual>
+
+  </link>
+  <joint name="joint_right_k1" type="continuous">
+    <parent link="right_h1"/>
+    <child link="right_k1"/>
+    <origin xyz="0 0 -0.2" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
+
+  <link name="right_k2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+          <cylinder length="0.3" radius="0.02" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0 0 -0.2" rpy="0 0 0" />
+      <geometry>
+          <sphere radius="0.05" />
+      </geometry>
+    </visual>
+
+  </link>
+  <joint name="joint_right_k2" type="continuous">
+    <parent link="right_h2"/>
+    <child link="right_k2"/>
+    <origin xyz="0 0 -0.2" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+  </joint>
 
 </robot>
