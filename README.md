@@ -17,7 +17,9 @@ first i choose the Robot_Dog
 
 6- make a launch file (done with rviz)
 7- writing a good readme
-### jokes
+### sceen shots
 funny_bug
+dog_gazebo
+dog_in_rviz
 ### References
 book: ros robotics by examples <br/>
