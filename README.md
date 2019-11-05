@@ -33,3 +33,4 @@ dog_in_rviz
 book: ros robotics by examples <br/>
 gazebo_control
 [1]http://gazebosim.org/tutorials/?tut=ros_control
+https://github.com/ros-simulation/gazebo_ros_demos/tree/kinetic-devel/rrbot_control
