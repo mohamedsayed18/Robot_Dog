@@ -1,2 +1,2 @@
-spot
+MYROBOT_control:gazebo_ros_demos/gazebo_tutorials:gazebo_ros_demos/rrbot_control:gazebo_ros_demos/rrbot_description:gazebo_ros_demos/rrbot_gazebo:spot
 -DCATKIN_DEVEL_PREFIX=/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/devel -DCMAKE_INSTALL_PREFIX=/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/install -G Unix Makefiles

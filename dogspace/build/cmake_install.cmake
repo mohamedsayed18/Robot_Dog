@@ -117,7 +117,12 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/build/gtest/cmake_install.cmake")
+  include("/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/build/gazebo_ros_demos/rrbot_control/cmake_install.cmake")
+  include("/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/build/gazebo_ros_demos/rrbot_description/cmake_install.cmake")
+  include("/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/build/gazebo_ros_demos/rrbot_gazebo/cmake_install.cmake")
   include("/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/build/spot/cmake_install.cmake")
+  include("/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/build/gazebo_ros_demos/gazebo_tutorials/cmake_install.cmake")
+  include("/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/build/MYROBOT_control/cmake_install.cmake")
 
 endif()
 
