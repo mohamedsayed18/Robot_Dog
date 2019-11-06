@@ -13,7 +13,7 @@ launch the control files<br/>
 Run this script which send values to the joints<br/>
 `rosrun rrbot_control publisher.py`<br/>
 
-###Control in Gazebo
+### Control in Gazebo
 i followed this [tutorial](http://gazebosim.org/tutorials/?tut=ros_control)<br/>
 this [repo](https://github.com/ros-simulation/gazebo_ros_demos.git) contain examples which they use in the above tutorial<br/>
 
