@@ -13,8 +13,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
+  "rrbot_control/catkin_generated/package.cmake"
   "spot/catkin_generated/package.cmake"
   "/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/src/CMakeLists.txt"
+  "/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/src/rrbot_control/CMakeLists.txt"
+  "/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/src/rrbot_control/package.xml"
   "/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/src/spot/CMakeLists.txt"
   "/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/src/spot/package.xml"
   "/opt/ros/kinetic/share/catkin/cmake/../package.xml"
@@ -125,6 +128,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "rrbot_control/CMakeFiles/CMakeDirectoryInformation.cmake"
   "spot/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -139,5 +143,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "gtest/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "gtest/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "gtest/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "spot/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake"
+  "rrbot_control/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake"
   )
