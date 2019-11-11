@@ -1,17 +1,23 @@
 # Robot_Dog
-Four legged robot URDF in Rviz and Gazebo [Video](https://youtu.be/crmAcT25vDQ) <br/>
+Four legged robot URDF in Rviz and Gazebo [Video](https://youtu.be/SznYLX9XDVU) <br/>
 ![](https://github.com/mohamedsayed18/Robot_Dog/blob/Readme/images/Dog_Gazebo.png)
 ### How to run
 * Clone the repo `git clone https://github.com/mohamedsayed18/Robot_Dog.git`<br/>
 * Put the packages (spot, rrbot_control) in your work space <br/>
 * build the work space `catkin_make`<br/>
 * then write this command <br/>
+Run all from one launch <br/>
+`roslaunch spot one_for_all.launch`<br/>
+
+Or run them separately <br/>
 launch the robot in gazebo<br/>
 `roslaunch spot dog_world.launch`<br/>
 launch the control files<br/>
 `roslaunch rrbot_control rrbot_control.launch`<br/>
 Run this script which send values to the joints<br/>
 `rosrun rrbot_control publisher.py`<br/>
+Run the Subscriber
+`rosrun spot camera_sub.py`<br/>
 
 ### Control in Gazebo
 i followed this [tutorial](http://gazebosim.org/tutorials/?tut=ros_control)<br/>
@@ -49,6 +55,3 @@ in the moodle. Let’s agreed to merge PR only after my review-grading.
 should increment like pic1.png pic2.png etc).
 * Add launch file to run all needed nodes.
 * Make small video showing that all is working, not more than 20 sec.
-
-### TODO
-make a head for my dog to attach the camera
