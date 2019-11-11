@@ -17,6 +17,14 @@ Run this script which send values to the joints<br/>
 i followed this [tutorial](http://gazebosim.org/tutorials/?tut=ros_control)<br/>
 this [repo](https://github.com/ros-simulation/gazebo_ros_demos.git) contain examples which they use in the above tutorial<br/>
 
+### adding camera
+i followed this [Tutorial: Using Gazebo plugins with ROS](http://gazebosim.org/tutorials?tut=ros_gzplugins)<br/>
+the photo of mydog_camera
+move the link with camera (done) with publisher
+subscriber save images to folder simple [subscriber](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)<br/>
+
+using the rostopic info /image_raw, i was able to know the type of the message
+[Writing a Simple Image Subscriber (C++)](http://wiki.ros.org/image_transport/Tutorials/SubscribingToImages)<br/>
 ### Steps
 the steps i took to approach this project<br/>
 1- choose the Robot_Dog<br/>
@@ -28,5 +36,19 @@ the steps i took to approach this project<br/>
 7- python script to publish <br/>
 7- writing a good readme <br/>
 
+
 ### References
 book: Ros robotics by examples <br/>
+
+### draft
+* Do work in a separate branch, make pull request (PR) and put link to PR
+in the moodle. Let’s agreed to merge PR only after my review-grading.
+* Add a camera sensor to one of your movable link.
+* Implement a publisher that moves the link with a camera
+* Implement a subscriber that saves images from a camera to files (the name
+should increment like pic1.png pic2.png etc).
+* Add launch file to run all needed nodes.
+* Make small video showing that all is working, not more than 20 sec.
+
+### TODO
+make a head for my dog to attach the camera
