@@ -21,7 +21,7 @@ class image_converter:
   def callback(self,data):
     try:
       cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
-      cv2.imwrite('/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/images/image'+str(self.counter)+'.png', cv_image)
+      cv2.imwrite('~/Documents/image'+str(self.counter)+'.png', cv_image)
       self.counter += 1
       rospy.sleep(10.)
     except CvBridgeError as e:
