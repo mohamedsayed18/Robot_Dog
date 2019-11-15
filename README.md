@@ -19,6 +19,11 @@ Run this script which send values to the joints<br/>
 Run the Subscriber
 `rosrun spot camera_sub.py`<br/>
 
+Run tests
+
+unit test `rosrun tests test_talker.py`
+integration test `rostest tests integration.launch`
+
 ### Control in Gazebo
 i followed this [tutorial](http://gazebosim.org/tutorials/?tut=ros_control)<br/>
 this [repo](https://github.com/ros-simulation/gazebo_ros_demos.git) contain examples which they use in the above tutorial<br/>
@@ -31,6 +36,14 @@ subscriber save images to folder simple [subscriber](http://wiki.ros.org/ROS/Tut
 
 using the rostopic info /image_raw, i was able to know the type of the message
 [Writing a Simple Image Subscriber (C++)](http://wiki.ros.org/image_transport/Tutorials/SubscribingToImages)<br/>
+### testing
+* make a simple publisher fk.py
+* unit test for this publisher test_talker.py
+* second node that subscribe and publish handler.py
+* integration test to see integration between fk.py and handler.py
+* launch file integration.launch
+
+
 ### Steps
 the steps i took to approach this project<br/>
 1- choose the Robot_Dog<br/>
@@ -47,11 +60,4 @@ the steps i took to approach this project<br/>
 book: Ros robotics by examples <br/>
 
 ### draft
-* Do work in a separate branch, make pull request (PR) and put link to PR
-in the moodle. Let’s agreed to merge PR only after my review-grading.
-* Add a camera sensor to one of your movable link.
-* Implement a publisher that moves the link with a camera
-* Implement a subscriber that saves images from a camera to files (the name
-should increment like pic1.png pic2.png etc).
-* Add launch file to run all needed nodes.
-* Make small video showing that all is working, not more than 20 sec.
+* unitestts
