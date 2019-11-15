@@ -21,7 +21,7 @@ Run the Subscriber
 
 Run tests
 
-unit test `rosrun tests test_talker.py`
+unit test `rosrun tests test_talker.py`<br/>
 integration test `rostest tests integration.launch`
 
 ### Control in Gazebo
@@ -58,6 +58,3 @@ the steps i took to approach this project<br/>
 
 ### References
 book: Ros robotics by examples <br/>
-
-### draft
-* unitestts
