@@ -15,11 +15,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin_generated/order_packages.cmake"
   "rrbot_control/catkin_generated/package.cmake"
   "spot/catkin_generated/package.cmake"
+  "tests/catkin_generated/package.cmake"
   "/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/src/CMakeLists.txt"
   "/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/src/rrbot_control/CMakeLists.txt"
   "/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/src/rrbot_control/package.xml"
   "/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/src/spot/CMakeLists.txt"
   "/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/src/spot/package.xml"
+  "/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/src/tests/CMakeLists.txt"
+  "/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/src/tests/package.xml"
   "/opt/ros/kinetic/share/catkin/cmake/../package.xml"
   "/opt/ros/kinetic/share/catkin/cmake/all.cmake"
   "/opt/ros/kinetic/share/catkin/cmake/assert.cmake"
@@ -130,6 +133,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "rrbot_control/CMakeFiles/CMakeDirectoryInformation.cmake"
   "spot/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

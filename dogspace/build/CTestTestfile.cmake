@@ -7,3 +7,4 @@
 subdirs(gtest)
 subdirs(rrbot_control)
 subdirs(spot)
+subdirs(tests)
