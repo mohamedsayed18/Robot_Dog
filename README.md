@@ -28,14 +28,7 @@ integration test `rostest tests integration.launch`
 i followed this [tutorial](http://gazebosim.org/tutorials/?tut=ros_control)<br/>
 this [repo](https://github.com/ros-simulation/gazebo_ros_demos.git) contain examples which they use in the above tutorial<br/>
 
-### adding camera
-i followed this [Tutorial: Using Gazebo plugins with ROS](http://gazebosim.org/tutorials?tut=ros_gzplugins)<br/>
-the photo of mydog_camera
-move the link with camera (done) with publisher
-subscriber save images to folder simple [subscriber](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)<br/>
 
-using the rostopic info /image_raw, i was able to know the type of the message
-[Writing a Simple Image Subscriber (C++)](http://wiki.ros.org/image_transport/Tutorials/SubscribingToImages)<br/>
 ### testing
 * make a simple publisher fk.py
 * unit test for this publisher test_talker.py
