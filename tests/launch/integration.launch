@@ -1,0 +1,5 @@
+<launch>
+  <node name="fk" pkg="rrbot_control" type="fk.py" />
+  <node name="handler" pkg="rrbot_control" type="handler.py" />
+  <test test-name="test_integration" pkg="tests" type="test_integration.py"/>
+</launch>
