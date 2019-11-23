@@ -1,8 +1,0 @@
-prefix=/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/devel
-
-Name: rrbot_gazebo
-Description: Description of rrbot_gazebo
-Version: 0.1.0
-Cflags: 
-Libs: -L/media/mohamed/C03CCDB43CCDA62E1/tutorials/Innopolis/1st/FRP/HA/Robot_Dog/dogspace/devel/lib 
-Requires: 
