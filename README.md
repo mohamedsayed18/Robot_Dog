@@ -52,3 +52,5 @@ the steps i took to approach this project<br/>
 
 ### References
 book: Ros robotics by examples <br/>
+#### testing
+[Travis with ROS](https://github.com/felixduvallet/ros-travis-integration)
