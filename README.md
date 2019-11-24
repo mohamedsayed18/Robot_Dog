@@ -1,4 +1,5 @@
 # Robot_Dog
+[![Build Status](https://travis-ci.org/mohamedsayed18/Robot_Dog.svg?branch=travis_test)](https://travis-ci.org/mohamedsayed18/Robot_Dog)<br/>
 Four legged robot URDF in Rviz and Gazebo [Video](https://youtu.be/SznYLX9XDVU) <br/>
 ![](https://github.com/mohamedsayed18/Robot_Dog/blob/Readme/images/Dog_Gazebo.png)
 ### How to run
@@ -51,3 +52,6 @@ the steps i took to approach this project<br/>
 
 ### References
 book: Ros robotics by examples <br/>
+#### testing
+
+[Travis with ROS](https://github.com/felixduvallet/ros-travis-integration)
