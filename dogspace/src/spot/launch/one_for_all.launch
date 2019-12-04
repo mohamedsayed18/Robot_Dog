@@ -1,0 +1,11 @@
+<launch>
+<!--launch the dog in gazebo world-->
+<include file="$(find spot)/launch/dog_world.launch" />
+<!--launch the control-->
+<include file="$(find rrbot_control)/launch/rrbot_control.launch" />
+<!--launch the control-->
+<node pkg="rrbot_control" name="motion" type="publisher.py"/>
+<!--launch the subscriber -->
+<node pkg="spot" name="capy" type="camera_sub.py"/>
+
+</launch>
