@@ -8,7 +8,8 @@ from std_msgs.msg import Float64
 class TalkerTestCase(unittest.TestCase):
 
     def callback(self, data):
-        self.assertEqual('fox'.upper(), 'FOO')
+        #equal to specific value or in a specific range
+        self.assertEqual(data.data, 10)
 
     def test_if_publishes(self):
         rospy.init_node('listener', anonymous=True)
